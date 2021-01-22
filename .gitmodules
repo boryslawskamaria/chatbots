@@ -1,0 +1,4 @@
+[submodule "submodules/rasa"]
+	path = submodules/rasa
+	url = git@github.com:RasaHQ/rasa.git
+

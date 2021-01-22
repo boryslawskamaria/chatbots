@@ -1,0 +1,5 @@
+/.env/
+/chatbot/models/
+/.vscode/
+__pycache__/
+
