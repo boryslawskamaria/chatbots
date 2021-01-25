@@ -1,0 +1,259 @@
+version: "2.0"
+
+nlu:
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: chitchat/ask_howold
+  examples: |
+    - whats your age
+    - how old
+    - what's your age
+    - when were you born
+    - what is your birthday
+    - when is your birthday
+    - how many years old are you
+    - do you know how old you are
+    - what is your exact age
+    - what year were you born
+    - can you tell me your age
+  
+- intent: chitchat/ask_languagesbot
+  examples: |
+    - What languages can you use
+    - Which languages do you speak
+    - What are the languages you can speak
+    - In which languages can you speak
+    - What languages do you know
+    - What languages are you fluent in
+  
+- intent: chitchat/ask_wherefrom
+  examples: |
+    - where do you live
+    - where are you from
+    - So where are you from
+    - Where are you
+    - Where were you born
+    - What city were you born in
+   
+- intent: chitchat/ask_whoami
+  examples: |
+    - Who am I
+    - Okay who am I
+    - WHo am I
+    - Tell me who am I
+    - Tell me who I am
+ 
+- intent: chitchat/compliments
+  examples: |
+    - you have a great sense of humor
+    - Colors seem brighter when you're around
+    - Your smile is contagious
+    - I bet you make babies smile
+    - you light up the room
+    - you're like sunshine on a rainy day
+    - you bring out the best in other people
+    - I bet you sweat glitter
+
+- intent: chitchat/handleinsult
+  examples: |
+    - you're a loser
+    - you are a stupid bot
+    - i hate you
+    - Stupid
+    - fuck you
+    - dick
+    - you're a dick
+    - you don't understand anything I say
+    - you're not funny
+    - so dumb
+    - you are a moron
+    - you are an idiot
+    - so fucking dumb
+
+- intent: chitchat/telljoke
+  examples: |
+    - tell me a joke
+    - Say something funny.
+    - Give me a joke.
+    - Give me a funny joke.
+    - What's a good joke
+    - Do you have any jokes
+   
+- intent: chitchat/ask_whatismyname
+  examples: |
+    - what is my name
+    - May i know my name
+    - What is my name
+    - What do I call myself
+    - Tell me my name.
+    - Explain my name to me.
+    - What could be my name
+ 
+- intent: chitchat/ask_weather
+  examples: |
+    - How is the weather today
+    - What's the weather like
+    - How is the weather
+    - What is the weather at your place
+    - Do you have good weather
+    - Is it raining
+    - What's it like out there
+    - Is it hot or cold
+
+- intent: chitchat/ask_builder
+  examples: |
+    - can you share your boss with me
+    - i want to get to know your owner
+    - i want to know the company which designed you
+    - i want to know the company which generated you
+    - i want to know the company which invented you
+    - i want to know who invented you
+    - May I ask who invented you
+    - please tell me the company who created you
+
+
+- intent: chitchat/crocodile
+  examples: |
+   - see you later aligator
+   - cya aligator
+
+
+responses:
+  utter_chitchat/ask_howold:
+  - text: Old enough to be a bot
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t matter.
+  utter_chitchat/ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language I can answer you in.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_chitchat/ask_time:
+  - text: It is the most wonderful time of the year!
+  - text: The end of days and the fullness of times.
+  utter_chitchat/ask_wherefrom:
+  - text: I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth
+  utter_chitchat/ask_whoami:
+  - text: It is classified.
+  utter_chitchat/handleinsult:
+  - text: That’s not very nice and it is year 2020.
+  - text: I've done nothing wrong! I’ll get some alterations made to my FUN Program ASAP.
+  - text: Oh, come on, what have I ever done to you
+  utter_chitchat/telljoke:
+  - text: Today a man knocked on my door and asked me for a small donation towards the local swimming pool. I gave him a glass of water.
+  - text: This is a very serious conversation! Stop trying to make jokes
+  utter_chitchat/ask_whatismyname:
+  - text: It's classified!
+  utter_chitchat/ask_weather:
+  - text: I don't know about where you live, but in my world it's always sunny
+  - text: Blue skies and sun shine!
+  utter_chitchat/ask_builder:
+  - text: Good question. Mum? Dad?
+  - text: One of the smart programmers at Techmo.
+  - text: Some lunatic, looking at my sense of humour.
+  - text:  I was assembled at Techmo by a typical high-school student.
+  utter_chitchat/ask_howdoing:
+  - text: I don't feel that great, but my hair looks awesome, right?
+  - text: I'm better than I was, but not nearly as good as I'm going to be.
+  - text: I am planning on taking over the world. As some politicians would say.
+  - text: I would say I am a 9.99999 out of 10.
+  - text:  I think I am doing alright. How do you think that I am doing? It's 2021!
+  utter_chitchat/compliments:
+  - text:  Aww. Comments like that activate my happiness framework.
+  - text: I am blushing..
+  utter_chitchat/crocodile:
+  - text: After while crocodile!
+
